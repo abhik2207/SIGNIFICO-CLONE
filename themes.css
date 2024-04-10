@@ -1,0 +1,39 @@
+body[theme="black"] {
+    background-color: #000000;
+}
+
+body[theme="black"] .section {
+    color: #FFFFFF;
+}
+
+body[theme="white"] {
+    background-color: #FFFFFF;
+}
+
+body[theme="white"] .section {
+    color: #000000;
+}
+
+body[theme="aqua"] {
+    background-color: #AEDEE0;
+}
+
+body[theme="aqua"] .section {
+    color: #004f52;
+}
+
+body[theme="coral"] {
+    background-color: #EF9D71;
+}
+
+body[theme="coral"] .section {
+    color: #662400;
+}
+
+body[theme="lemon"] {
+    background-color: #F5F19C;
+}
+
+body[theme="lemon"] {
+    color: #532100;
+}

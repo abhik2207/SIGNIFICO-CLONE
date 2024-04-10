@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: satoshi;
+    src: url(./fonts/Satoshi-Variable.ttf);
+}
+
+@font-face {
+    font-family: neue-light;
+    src: url(./fonts/Neue-Machina-Light.ttf);
+}
+
+@font-face {
+    font-family: neue-medium;
+    src: url(./fonts/Neue-Machina-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#homepage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border: 3px solid red;
+}
+
+#homepage > #video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0vmax;
+    left: 0vmax;
+    display: none;
+    z-index: 5;
+}
+
+#video-container > video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#homepage > #marquee-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#marquee-container > #marquee-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    /* background-color: green; */
+}
+
+#marquee-div > .marquee-row {
+    width: 100%;
+    padding: 1vmax 0vmax;
+    display: flex;
+    align-items: center;
+    gap: 2.5vmax;
+    white-space: nowrap;
+}
+
+#marquee-div > .marquee-row:nth-child(2n) {
+    transform: translateX(-50%);
+}
+
+#marquee-div > .marquee-row:nth-child(2n-1) {
+    transform: translateX(-33%);
+}
+
+.marquee-row > .elem {
+    display: flex;
+    align-items: center;
+    gap: 2vmax;
+}
+
+.elem > h1 {
+    font-family: neue-medium;
+    font-size: 5.25vmax;
+    line-height: 3.5vmax;
+    letter-spacing: -5px;
+    font-weight: 500;
+}
+
+.elem > .marquee-row-image {
+    height: 3.5vmax;
+    width: 3.5vmax;
+    border-radius: 50%;
+}
+
+.marquee-row-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
