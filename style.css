@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: satoshi;
 }
 
 html, body {
@@ -41,7 +41,7 @@ html, body {
     top: 0vmax;
     left: 0vmax;
     display: none;
-    z-index: 5;
+    z-index: 3;
 }
 
 #video-container > video {
@@ -65,7 +65,6 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    /* background-color: green; */
 }
 
 #marquee-div > .marquee-row {
@@ -110,4 +109,97 @@ html, body {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+#marquee-heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30%;
+}
+
+#marquee-heading > h1 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.65vmax;
+    line-height: 2.75vmax;
+}
+
+#home-message {
+    position: absolute;
+    bottom: 2vmax;
+    left: 2vmax;
+    text-align: center;
+    width: 12%;
+    z-index: 4;
+}
+
+#home-message > p {
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.35vmax;
+    font-size: 0.95vmax;
+}
+
+#page-2 {
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0vmax 2vmax;
+    position: relative;
+}
+
+#page2-left {
+    background-color: lightgreen;
+    width: 40%;
+    position: sticky;
+    /* height: fit-content; */
+    top: 2vmax;
+    left: 0vmax;
+}
+
+#page2-left > p {
+    font-size: 1.2vmax;
+    line-height: 1.75vmax;
+    font-weight: 500;
+    margin-bottom: 2vmax;
+}
+
+#page2-left > h1 {
+    font-family: neue-light;
+    font-size: 4.5vmax;
+    line-height: 5.25vmax;
+    font-weight: 400;
+    margin-bottom: 2vmax;
+}
+
+#page2-right {
+    background-color: lightpink;
+    width: 50%;
+}
+
+#page2-button {
+    width: fit-content;
+    padding: 1vmax 1.5vmax;
+    border: 1.5px solid #000;
+    display: flex;
+    gap: 1vmax;
+}
+
+#page2-button > #masker {
+    overflow: hidden;
+}
+
+#page2-button > #masker > span {
+    font-weight: 700;
+    font-size: 0.95vmax;
+    display: inline-block;
+}
+
+#page2-button > i {
+    font-size: 1.2vmax;
 }
