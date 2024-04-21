@@ -145,7 +145,6 @@ html, body {
 
 #page-2 {
     width: 100%;
-    background-color: blue;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -154,10 +153,8 @@ html, body {
 }
 
 #page2-left {
-    background-color: lightgreen;
     width: 40%;
     position: sticky;
-    /* height: fit-content; */
     top: 2vmax;
     left: 0vmax;
 }
@@ -175,11 +172,6 @@ html, body {
     line-height: 5.25vmax;
     font-weight: 400;
     margin-bottom: 2vmax;
-}
-
-#page2-right {
-    background-color: lightpink;
-    width: 50%;
 }
 
 #page2-button {
@@ -202,4 +194,258 @@ html, body {
 
 #page2-button > i {
     font-size: 1.2vmax;
+}
+
+#page2-right {
+    background-color: lightpink;
+    width: 50%;
+}
+
+#page3 {
+    width: 100%;
+}
+
+#slides-container {
+    height: 400vh;
+    width: 100%;
+    position: relative;
+}
+
+#slides {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* overflow: hidden; */
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide1 {
+    background-color: lightgreen;
+}
+
+.slide1 > h1 {
+    font-family: neue-light;
+    font-size: 6.75vmax;
+    line-height: 7vmax;
+    font-weight: 400;
+}
+
+.slide2 {
+    background-color: lightpink;
+}
+
+.slide2 > h1 {
+    font-family: neue-medium;
+    font-size: 10vmax;
+    line-height: 7vmax;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.slide2 > p {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    width: 18.5%;
+    font-size: 1.2vmax;
+    line-height: 2vmax;
+    font-weight: 600;
+}
+
+.slide2 > h3 {
+    font-family: neue-medium;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2.5vmax;
+    font-weight: 600;
+}
+
+.slide3 {
+    background-color: lightblue;
+}
+
+.slide4 {
+    background-color: lemonchiffon;
+}
+
+.slide-image {
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.slide-image-big {
+    height: 22.5vmax;
+    width: 22.5vmax;
+}
+
+.slide-image-huge {
+    height: 23vmax;
+    width: 23vmax;
+}
+
+.slide-image-medium {
+    height: 18vmax;
+    width: 18vmax;
+}
+
+.slide-image-small {
+    height: 10vmax;
+    width: 10vmax;
+}
+
+.slide-image-tiny {
+    height: 5vmax;
+    width: 5vmax;
+}
+
+.slide-image > img {
+    height: 120%;
+    width: 120%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide1 > .slide-image-big {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.slide2 > .slide-image-huge {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.slide2 > .slide-image-small {
+    top: 72%;
+    left: 22%;
+}
+
+.slide2 > .slide-image-medium {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide2 > .slide-image-big {
+    bottom: 0;
+    left: 40%;
+    transform: translateY(50%);
+}
+
+.slide3 > h1 {
+    font-family: neue-medium;
+    font-size: 10vmax;
+    line-height: 7vmax;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.slide3 > p {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    width: 18.5%;
+    font-size: 1.2vmax;
+    line-height: 2vmax;
+    font-weight: 600;
+}
+
+.slide3 > h3 {
+    font-family: neue-medium;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2.5vmax;
+    font-weight: 600;
+}
+
+.logo-image {
+    position: absolute;
+}
+
+.logo-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo-1 {
+    height: 24vmax;
+    width: 24vmax;
+    top: 52%;
+    left: 10%;
+}
+
+.logo-2 {
+    height: 18vmax;
+    width: 18vmax;
+    top: 0%;
+    left: 35%;
+}
+
+.logo-3 {
+    height: 20vmax;
+    width: 20vmax;
+    top: 30%;
+    left: 75%;
+}
+
+.slide4 > h1 {
+    font-family: neue-medium;
+    font-size: 10vmax;
+    line-height: 7vmax;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.slide4 > h3 {
+    font-family: neue-medium;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2.5vmax;
+    font-weight: 600;
+}
+
+.slide4 > .slide-image-huge {
+    top: 85%;
+    left: 10%;
+}
+
+.slide4 > .slide-image-big {
+    top: -2%;
+    left: 85%;
+}
+
+.slide4 > .slide-image-tiny {
+    top: 70%;
+    left: 75%;
+}
+
+.slide4 > .slide-image-medium {
+    top: -5%;
+    left: 25%;
 }

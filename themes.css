@@ -35,11 +35,11 @@ body[theme="aqua"] .section {
     color: var(--black);
 }
 
-body[theme="coral"] {
+body[theme="salmon"] {
     background-color: var(--salmon);
 }
 
-body[theme="coral"] .section {
+body[theme="salmon"] .section {
     color: var(--black);
 }
 
