@@ -174,7 +174,6 @@ function bodyColorChange() {
                 trigger: el,
                 start: "top 50%",
                 end: "bottom 50%",
-                markers: true,
                 onEnter: function () {
                     document.body.setAttribute("theme", el.dataset.color);
                 },
@@ -185,3 +184,34 @@ function bodyColorChange() {
         });
 }
 bodyColorChange();
+
+function page2Animation() {
+    document.querySelectorAll('.card')
+    .forEach(function(el){
+        gsap.to(el, {
+            width: "100%",
+            scrollTrigger: {
+                trigger: el,
+                start: "top 80%",
+                end: "top 50%",
+                scrub: 1
+            }
+        });
+    });
+}
+page2Animation();
+
+function footerAnimation() {
+    gsap.from('#footer-center>h1>span', {
+        y: 200,
+        stagger: 0.2,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#footer",
+            start: "top 90%",
+            end: "top 60%",
+            scrub: 3
+        }
+    });
+}
+footerAnimation();

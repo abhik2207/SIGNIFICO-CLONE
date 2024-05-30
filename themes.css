@@ -11,6 +11,21 @@
     color: var(--white);
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #fff;
+    border-radius: 1000px;
+}
+
+body {
+    scrollbar-width: 10px;
+}
+
 body[theme="black"] {
     background-color: var(--black);
 }
