@@ -31,7 +31,7 @@ html, body {
     width: 100%;
     height: 100vh;
     position: relative;
-    border: 3px solid red;
+    overflow: hidden;
 }
 
 #homepage > #video-container {
@@ -40,8 +40,12 @@ html, body {
     position: absolute;
     top: 0vmax;
     left: 0vmax;
-    display: none;
     z-index: 3;
+    /* display: none; */
+}
+
+#video-container {
+    clip-path: circle(var(--clip) at 50% 50%);
 }
 
 #video-container > video {
@@ -57,6 +61,7 @@ html, body {
     height: 100%;
     position: relative;
     overflow: hidden;
+    transform: scale(1);
 }
 
 #marquee-container > #marquee-div {
@@ -77,11 +82,11 @@ html, body {
 }
 
 #marquee-div > .marquee-row:nth-child(2n) {
-    transform: translateX(-50%);
+    transform: translateX(-75%);
 }
 
 #marquee-div > .marquee-row:nth-child(2n-1) {
-    transform: translateX(-33%);
+    transform: translateX(-50%);
 }
 
 .marquee-row > .elem {
@@ -143,13 +148,14 @@ html, body {
     font-size: 0.95vmax;
 }
 
-#page-2 {
+#page2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0vmax 2vmax;
     position: relative;
+    margin-top: 10vmax;
 }
 
 #page2-left {
@@ -218,7 +224,7 @@ html, body {
     position: sticky;
     top: 0;
     left: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .slide {
@@ -231,10 +237,6 @@ html, body {
     position: relative;
 }
 
-.slide1 {
-    background-color: lightgreen;
-}
-
 .slide1 > h1 {
     font-family: neue-light;
     font-size: 6.75vmax;
@@ -242,9 +244,6 @@ html, body {
     font-weight: 400;
 }
 
-.slide2 {
-    background-color: lightpink;
-}
 
 .slide2 > h1 {
     font-family: neue-medium;
@@ -275,13 +274,6 @@ html, body {
     font-weight: 600;
 }
 
-.slide3 {
-    background-color: lightblue;
-}
-
-.slide4 {
-    background-color: lemonchiffon;
-}
 
 .slide-image {
     border-radius: 50%;
@@ -450,11 +442,280 @@ html, body {
     left: 25%;
 }
 
+.slide4 {
+    overflow: hidden;
+}
 
+#page4 {
+    padding: 5vmax 0vmax;
+}
 
+#page4 > h1 {
+    text-align: center;
+    font-size: 4vmax;
+    font-weight: 100;
+    font-family: neue-light;
+    letter-spacing: -2px;
+}
 
+#page4 > #list {
+    width: 100%;
+    padding: 0vmax 3vmax;
+    margin-top: 3vmax;
+}
 
+.listitem {
+    width: 100%;
+    height: 7.2vmax;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
 
+.listitem:nth-last-child(1) {
+    border-bottom: none;
+}
 
+.listitem > .listitem-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 0vmax 1.25vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.listitem-left {
+    display: flex;
+    align-items: center;
+    gap: 3vmax;
+}
 
+.listitem-left > h3 {
+    font-size: 2.4vmax;
+    font-family: neue-light;
+    font-weight: 100;
+    color: #0000002f;
+}
+
+.listitem-left > h1 {
+    font-size: 2.3vmax;
+    font-family: neue-light;
+    font-weight: 100;
+    color: #000;
+}
+
+.listitem-right > h4 {
+    font-size: 1.2vmax;
+    font-weight: 500;
+}
+
+.listitem > .bluelayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    z-index: 4;
+    background-color: blue;
+}
+
+.listitem-picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    height: 20vmax;
+    width: 20vmax;
+    border-radius: 50%;
+    display: none;
+}
+
+.listitem-picture > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page5 {
+    width: 100%;
+    height: fit-content;
+    padding: 10vmax 0vmax;
+    display: flex;
+}
+
+#page5-left, #page5-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page5-right {
+    margin-top: 16vmax;
+}
+
+#page5-left > p, #page5-right > p {
+    width: 70%;
+    font-size: 1.2vmax;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+#page5-left > h1, #page5-right > h1 {
+    font-size: 1.4vmax;
+    font-weight: 800;
+}
+
+#page5-left > h3, #page5-right > h3 {
+    font-size: 1vmax;
+    font-weight: 600;
+    color: #00000063;
+}
+
+.para-person {
+    height: 8vmax;
+    width: 8vmax;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2vmax;
+}
+
+.para-person > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmax 3vmax;
+}
+
+#page6-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page6-left > h4 {
+    width: 45%;
+    font-size: 1vmax;
+    font-weight: 600;
+    line-height: 1.5vmax;
+}
+
+#page6-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    align-items: flex-start;
+}
+
+#page6-bottom > h1 {
+    font-family: neue-light;
+    font-size: 3.6vmax;
+    font-weight:100;
+}
+
+#page6-bottom > button {
+    font-size: 0.8vmax;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 1.2vmax;
+    padding: 1vmax;
+    background-color: #F5F19C;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#page6-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vmax;
+}
+
+.capsule {
+    padding: 1.5vmax;
+    border-radius: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vmax;
+    border: 2px solid #000;
+    transform: rotate(-20deg);
+}
+
+.capsule:nth-child(2) {
+    flex-direction: column-reverse;
+    gap: 3.5vmax;
+}
+
+.capsule-image {
+    height: 16vmax;
+    width: 16vmax;
+    background-color: blue;
+    border-radius: 50%;
+    margin-bottom: 2vmax;
+    overflow: hidden;
+}
+
+.capsule:nth-child(2) > .capsule-image {
+    flex-direction: column-reverse;
+    margin-bottom: 0vmax;
+}
+
+.capsule-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.capsule-header > p {
+    font-size: 1.4vmax;
+    font-weight: 600;
+    font-family: neue-light;
+    text-align: center;
+}
+
+.capsule-para > p {
+    font-size: 0.85vmax;
+    text-align: center;
+}
+
+.capsule-pill {
+    background-color: #E9BBFF;
+    padding: 0.5vmax 0.6vmax;
+    border-radius: 20vmax;
+    margin: 2vmax 0vmax;
+}
+
+.capsule-pill > p {
+    font-size: 0.9vmax;
+    font-weight: 600;
+    font-family: neue-light;
+    line-height: 1vmax;
+    margin-top: 0.2vmax;
+    letter-spacing: 1px;
+}
