@@ -12,9 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
-<body theme="black">
+<body theme="white">
     <div id="main">
-        <div id="homepage" class="section">
+        <div id="homepage" data-color="black" class="section">
             <div id="home-message">
                 <p>We build big ideas.<br>Software. Apps. Tools.<br>For real people. Real lives.</p>
             </div>
@@ -169,7 +169,7 @@
                 </div>
             </div>
         </div>
-        <div id="page2" class="section">
+        <div id="page2" data-color="aqua" class="section">
             <div id="page2-left">
                 <p>Significo is a custom health software developer founded on the belief that technology can transform
                     healthcare to put people first. We put humanity back at the center of healthcare by simplifying
@@ -229,7 +229,7 @@
                 <button></button>
             </div>
         </div>
-        <div id="page3" class="section">
+        <div id="page3" data-color="salmon" class="section">
             <div id="slides-container">
                 <div id="slides">
                     <div class="slide slide1">
@@ -256,20 +256,6 @@
                             <img src="./images/slide-4.jpg" alt="slide">
                         </div>
                     </div>
-                    <div class="slide slide3">
-                        <h1>49%</h1>
-                        <h3>Expert Women in Tech.</h3>
-                        <p>Our team is global and diverse, because our individual experiences make us stronger.</p>
-                        <div class="logo-1 logo-image">
-                            <img src="./images/slide-6.png" alt="Logo">
-                        </div>
-                        <div class="logo-2 logo-image">
-                            <img src="./images/slide-7.png" alt="Logo">
-                        </div>
-                        <div class="logo-3 logo-image">
-                            <img src="./images/slide-8.png" alt="Logo">
-                        </div>
-                    </div>
                     <div class="slide slide4">
                         <h1>13</h1>
                         <h3>Nationalities Represented on<br>Our Team.</h3>
@@ -286,10 +272,24 @@
                             <img src="./images/slide-11.jpg" alt="slide">
                         </div>
                     </div>
+                    <div class="slide slide3">
+                        <h1>49%</h1>
+                        <h3>Expert Women in Tech.</h3>
+                        <p>Our team is global and diverse, because our individual experiences make us stronger.</p>
+                        <div class="logo-1 logo-image">
+                            <img src="./images/slide-6.png" alt="Logo">
+                        </div>
+                        <div class="logo-2 logo-image">
+                            <img src="./images/slide-7.png" alt="Logo">
+                        </div>
+                        <div class="logo-3 logo-image">
+                            <img src="./images/slide-8.png" alt="Logo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="page4" class="section">
+        <div id="page4" data-color="white" class="section">
             <h1>Our team</h1>
             <div id="list">
                 <div class="listitem">
@@ -414,9 +414,9 @@
                 </div>
             </div>
         </div>
-        <div id="page5" class="section">
+        <div id="page5" data-color="white" class="section">
             <div id="page5-left">
-                <p>Working with the Significo team has been Such a pleasure! We took on a significant project to rebuild our entire platform and the team approached the project with our best interests in mind. They continue to prioritize and end user experience and offer amazing expertise in all of the areas we lack internally. I would personally be lost without this team, their ability to solve problems, their openness to feedback and desire to build the product like it is their own.</p>
+                <p id="review1">Working with the Significo team has been Such a pleasure! We took on a significant project to rebuild our entire platform and the team approached the project with our best interests in mind. They continue to prioritize and end user experience and offer amazing expertise in all of the areas we lack internally. I would personally be lost without this team, their ability to solve problems, their openness to feedback and desire to build the product like it is their own.</p>
                 <div class="para-person">
                     <img src="./images/para-1.jpg" alt="paragraph person">
                 </div>
@@ -424,7 +424,7 @@
                 <h3>Product Manager @ HealthCheck360</h3>
             </div>
             <div id="page5-right">
-                <p>Working with Significo and their recommendation service has been a game-changer for our occupational prevention efforts. Our customers are extremely satisfied with the tool's impressive technical capabilities and data-driven approach. But what truly sets it apart is the intuitive and modern user experience it offers, making it a breeze for our clients to navigate. By leveraging this service, our customers have successfully tackled presenteeism and absenteeism.</p>
+                <p id="review2">Working with Significo and their recommendation service has been a game-changer for our occupational prevention efforts. Our customers are extremely satisfied with the tool's impressive technical capabilities and data-driven approach. But what truly sets it apart is the intuitive and modern user experience it offers, making it a breeze for our clients to navigate. By leveraging this service, our customers have successfully tackled presenteeism and absenteeism.</p>
                 <div class="para-person">
                     <img src="./images/para-2.webp" alt="paragraph person">
                 </div>
@@ -432,7 +432,7 @@
                 <h3>CEO @ VitalServices</h3>
             </div>
         </div>
-        <div id="page6" class="section">
+        <div id="page6" data-color="white" class="section">
             <div id="page6-left">
                 <h4>Stay up-to-date on the latest healthcare innovations and thought leadership.</h1>
                 <div id="page6-bottom">
@@ -462,6 +462,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 
