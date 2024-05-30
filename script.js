@@ -23,12 +23,12 @@ function homepageAnimation() {
             ease: Power2,
         }, 'a')
         .to('.lft', {
-            xPercent: -25,
+            xPercent: -70,
             ease: Power4,
             stagger: 0.03
         }, 'b')
         .to('.rgt', {
-            xPercent: 25,
+            xPercent: 30,
             ease: Power4,
             stagger: 0.03
         }, 'b');
